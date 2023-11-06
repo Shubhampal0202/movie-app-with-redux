@@ -1,0 +1,43 @@
+.popular {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.movieContainer {
+  width: 98vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+.movieCardContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+@media only screen and (max-width: 450px) {
+  .popular {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 680px) {
+  .popular {
+    font-size: 1.4rem;
+  }
+  .movieCardContainer {
+    gap: 1rem;
+  }
+}
+@media only screen and (min-width: 680px) {
+  .movieContainer {
+    margin-bottom: 1.4rem;
+  }
+}

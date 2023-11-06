@@ -1,0 +1,79 @@
+.movieCont {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+.movieCont > .imageCont > img {
+  width: 40vw;
+  height: 70vh;
+  margin-left: 1rem;
+  border-radius: 10px;
+}
+
+.movieDetails {
+  margin-left: 10px;
+  padding: 100px 0;
+}
+.release {
+  display: flex;
+  align-items: center;
+}
+
+.release > h5 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.release > h5 > span {
+  border: 1px solid rgba(0, 0, 0, 0.461);
+  padding: 5px;
+  margin-right: 4px;
+}
+.release > ul {
+  margin-left: 1.5rem;
+}
+.release > ul > li {
+  font-weight: 500;
+}
+
+.movieDetails > * {
+  margin: 10px 0;
+}
+.movieDetails > .title {
+  font-size: 1.5rem;
+}
+.movieDetails > .title > h3 > span {
+  font-weight: 400;
+}
+.movieRating {
+  display: flex;
+  align-items: center;
+}
+.movieRating > h3 {
+  margin-right: 4px;
+}
+.overview > div {
+  padding: 5px 10px 0 0;
+}
+
+@media only screen and (max-width: 450px) {
+  .movieDetails > .title {
+    font-size: 1rem;
+  }
+  .release > h5,
+  ul {
+    font-size: 0.8rem;
+  }
+  .overview > h3 {
+    font-size: 1rem;
+  }
+  .overview > div {
+    font-size: 0.9rem;
+  }
+  .movieRating > h3 {
+    font-size: 1rem;
+  }
+  .movieRating > span {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,35 @@
+.genre {
+  width: 22vw;
+  height: max-content;
+}
+.listContainer {
+  list-style-type: none;
+}
+.listContainer > li {
+  border: 1px solid rgba(0, 0, 0, 0.21);
+  padding: 10px;
+  color: rgba(0, 0, 255, 0.539);
+  font-weight: 600;
+  cursor: pointer;
+}
+.listContainer>.selected{
+    background-color: rgba(0, 0, 255, 0.642);
+    color: white;
+}
+
+@media only screen and (max-width: 450px){
+.genre>.listContainer>li{
+  font-size: 0.8rem;
+}
+}
+
+@media only screen and (max-width:1000px){
+  .genre {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 70%;
+  }
+  .genre>.listContainer>li{
+    text-align: center;
+  }
+}

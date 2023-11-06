@@ -1,0 +1,70 @@
+.banner {
+  width: 99vw;
+  height: 84vh;
+  position: relative;
+}
+.banner > img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner > .bannerTitle {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  color: white;
+}
+.banner > .bannerOverView {
+  position: absolute;
+  top: 24rem;
+  left: 3rem;
+  color: white;
+}
+@media only screen and (max-width: 450px) {
+  .banner{
+      height: 60vh;
+  }
+  .banner > .bannerTitle {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .banner > .bannerOverView {
+    position: absolute;
+    top: 13rem;
+    left: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 680px) {
+  .banner{
+    height: 70vh;
+  }
+  .banner > .bannerTitle {
+    top: 2rem;
+    font-size: 1rem;
+    left: 1rem;
+  }
+   .banner > .bannerOverView {
+    position: absolute;
+    top: 17rem;
+    left: 1rem;
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width:680px){
+   .banner > .bannerTitle {
+    top: 1.6rem;
+    font-size: 1rem;
+    left: 1rem;
+  }
+   .banner > .bannerOverView {
+    position: absolute;
+    top: 21rem;
+    left: 1rem;
+    font-size: 0.9rem;
+  }
+}

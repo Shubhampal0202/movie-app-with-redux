@@ -1,0 +1,20 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem;
+    
+}
+.pagination>*{
+    padding: 6px 6px;
+    width: 2.6rem;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.selectedPage{
+    background-color: rgba(0, 0, 255, 0.701);
+    color: white;
+}

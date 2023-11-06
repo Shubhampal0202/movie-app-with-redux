@@ -1,0 +1,17 @@
+.favPagination {
+  display: flex;
+  margin-top: 10px;
+}
+.favPagination > * {
+  padding: 6px 6px;
+  width: 2.3rem;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.151);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.favSelected {
+  background-color: rgba(0, 0, 255, 0.701);
+  color: white;
+}

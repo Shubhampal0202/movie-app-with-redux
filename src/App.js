@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import Navbar from "./Components/navbar/Navbar";
+import Movies from "./Pages/movies/Movies";
+import Favourites from "./Pages/favourites/Favourites";
+import { Routes, Route } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+import SpecificMovie from "./Components/specificMovie/SpecificMovie";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Provider store={store}>
+        <Routes>
+          <Route path="/" element={<Movies />} />
+          <Route path="/favourites" element={<Favourites />} />
+          <Route path="/movie/:id" element={<SpecificMovie />} />
+        </Routes>
+      </Provider>
     </div>
   );
 }
